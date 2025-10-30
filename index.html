@@ -24,20 +24,7 @@
         margin: 0 auto;
       }
 
-      /* Headings */
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        line-height: 1.1;
-        font-weight: 600;
-        text-wrap: balance;
-      }
-
-      h1,
-      h2 {
+      h1, h2 {
         border-bottom: 1px solid var(--color-neutral-80);
         padding-bottom: 0.2em;
       }
@@ -69,21 +56,6 @@
         font-size: 130%;
       }
 
-      /* Lists */
-      ul,
-      ol {
-        padding-inline-start: 2em;
-      }
-
-      li::marker {
-        color: var(--color-neutral-40);
-      }
-
-      li + li {
-        margin-top: 0.2em;
-      }
-
-      /* Sectioning elements */
       header {
         padding-block: 1em;
         text-align: center;
@@ -96,7 +68,6 @@
         padding: 0.1rem 2rem;
       }
 
-      /* Figures */
       figure {
         margin: 1em 0;
         padding: 0.5rem;
@@ -122,16 +93,6 @@
         font-weight: bold;
         color: var(--color-neutral-40);
       }
-
-      figure > figcaption a:not(:hover, :focus, :active) {
-        color: inherit;
-        text-decoration: underline;
-        text-decoration-color: color-mix(
-          in lab,
-          currentColor,
-          transparent 70%
-        );
-      }
     </style>
   </head>
 
@@ -142,13 +103,12 @@
         Persuasive or Deceptive Visualization?
       </h1>
 
-      <p><strong>Amjad Faiz Bin Muhamad Afandy</strong> — <em>your_email@ucsd.edu</em></p>
+      <p><strong>Amjad Faiz Bin Muhamad Afandy</strong> — <em>amuhamadafandy@ucsd.edu</em></p>
     </header>
 
     <main>
       <h2>Proposition: Global surface temperatures have steadily risen since the 1960s, accelerating in recent decades.</h2>
 
-      <!-- FOR the Proposition / Persuasive -->
       <section>
         <h3>FOR the Proposition</h3>
 
@@ -165,28 +125,14 @@
         </figure>
 
         <p>Design Decisions and Rationale:</p>
-
         <ul>
-          <li>
-            I used the full time range (1960s–2024) to show the long-term pattern, not just a short slice. This supports the claim
-            that warming is steady and accelerating.
-          </li>
-          <li>
-            I defined “temperature anomaly” on the chart (“how much warmer or cooler Earth is compared to the 1961–1990 average”)
-            to make sure the audience understands what the y-axis means instead of getting lost in jargon.
-          </li>
-          <li>
-            I added annotations calling out when warming speeds up and when record highs happen. That guides the viewer’s eye to
-            the idea of acceleration, which is central to the proposition.
-          </li>
-          <li>
-            The y-axis includes 0 and the baseline reference line, so the rise is shown honestly without distorting the slope.
-            The warm red color and subtle fill reinforce that this is about heat.
-          </li>
+          <li>We used the full time range (1960s–2024) to show the long-term pattern, not just a short slice. This supports the claim that warming is steady and accelerating.</li>
+          <li>We defined “temperature anomaly” on the chart (“how much warmer or cooler Earth is compared to the 1961–1990 average”) to ensure the audience understands what the y-axis means instead of getting lost in jargon.</li>
+          <li>We added annotations calling out when warming speeds up and when record highs happen. That guides the viewer’s eye to the idea of acceleration, which is central to the proposition.</li>
+          <li>The y-axis includes 0 and the baseline reference line, so the rise is shown honestly without distorting the slope. The warm red color and subtle fill reinforce that this is about heat.</li>
         </ul>
       </section>
 
-      <!-- AGAINST the Proposition / Deceptive -->
       <section>
         <h3>AGAINST the Proposition</h3>
 
@@ -203,52 +149,29 @@
         </figure>
 
         <p>Design Decisions and Rationale:</p>
-
         <ul>
-          <li>
-            I cropped the time window down to only 2010–2024 instead of showing the full record. This hides the long-term climb
-            since the 1960s and makes the data feel like normal short-term wobble instead of a clear upward trend.
-          </li>
-          <li>
-            I added a shaded band labeled “typical range,” which suggests safety and normalcy. The band looks authoritative but
-            it’s framing, not a scientific safety threshold.
-          </li>
-          <li>
-            I used a tight y-axis (about 1.3–2.2 °C) and calm blue styling. This visually compresses the change and gives an
-            overall “nothing to worry about” tone. The title also pushes that message by calling it “typical.”
-          </li>
-          <li>
-            Overall, this is deceptive because it downplays the rate of warming without changing the underlying data values.
-            It manipulates framing, not the numbers.
-          </li>
+          <li>We cropped the time window down to only 2010–2024 instead of showing the full record. This hides the long-term climb since the 1960s and makes the data feel like normal short-term wobble instead of a clear upward trend.</li>
+          <li>We added a shaded band labeled “typical range,” which suggests safety and normalcy. The band looks authoritative but it’s framing, not a scientific safety threshold.</li>
+          <li>We used a tight y-axis (about 1.3–2.2 °C) and calm blue styling. This visually compresses the change and gives an overall “nothing to worry about” tone. The title also pushes that message by calling it “typical.”</li>
+          <li>Overall, this is deceptive because it downplays the rate of warming without changing the underlying data values. It manipulates framing, not the numbers.</li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
-
         <p>
           Both charts are built from the same dataset, but they argue opposite stories. The persuasive version is designed to
-          communicate the scientific reality: the planet is warming, and the pace of warming increased in recent decades. It
-          uses the full timeline, shows context with a baseline line at 0 °C, and adds annotations that explain why the pattern
-          matters. It tries to help the viewer understand the message.
+          communicate the scientific reality: the planet is warming, and the pace of warming has increased in recent decades.
+          It uses the full timeline, shows context with a baseline line at 0 °C, and adds annotations that explain why the
+          pattern matters. It aims to help viewers understand the message clearly.
         </p>
-
         <p>
           The deceptive version is still technically “true” in the sense that the plotted numbers are real, but it’s framed to
           soften the message. By zooming in on only recent years, tightening the axis, using a calming color palette, and adding
-          a fake idea of a “typical range,” it suggests there’s no urgent change. This shows how you can steer interpretation
+          a fake idea of a “typical range,” it suggests there’s no urgent change. This demonstrates how we can steer perception
           without editing the raw data.
         </p>
       </section>
     </main>
-
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-      data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-      crossorigin="anonymous">
-    </script>
   </body>
 </html>
